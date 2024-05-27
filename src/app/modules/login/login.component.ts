@@ -52,12 +52,6 @@ export class LoginComponent implements OnInit, OnDestroy {
         }
     }
 
-    async loginByGoogle() {
-        this.isGoogleLoading = true;
-        await this.appService.signInByGoogle();
-        this.isGoogleLoading = false;
-    }
-
     ngOnDestroy() {
         this.renderer.removeClass(
             document.querySelector('app-root'),

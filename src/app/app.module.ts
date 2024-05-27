@@ -13,7 +13,7 @@ import {BlankComponent} from '@pages/blank/blank.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {ProfileComponent} from '@pages/profile/profile.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RegisterComponent} from '@modules/register/register.component';
+
 import {DashboardComponent} from '@pages/dashboard/dashboard.component';
 import {ToastrModule} from 'ngx-toastr';
 import {MessagesComponent} from '@modules/main/header/messages/messages.component';
@@ -22,8 +22,7 @@ import {NotificationsComponent} from '@modules/main/header/notifications/notific
 import {CommonModule, registerLocaleData} from '@angular/common';
 import localeEn from '@angular/common/locales/en';
 import {UserComponent} from '@modules/main/header/user/user.component';
-import {ForgotPasswordComponent} from '@modules/forgot-password/forgot-password.component';
-import {RecoverPasswordComponent} from '@modules/recover-password/recover-password.component';
+
 import {LanguageComponent} from '@modules/main/header/language/language.component';
 import {MainMenuComponent} from './pages/main-menu/main-menu.component';
 import {SubMenuComponent} from './pages/main-menu/sub-menu/sub-menu.component';
@@ -49,13 +48,11 @@ registerLocaleData(localeEn, 'en-EN');
         MenuSidebarComponent,
         BlankComponent,
         ProfileComponent,
-        RegisterComponent,
+
         DashboardComponent,
         MessagesComponent,
         NotificationsComponent,
         UserComponent,
-        ForgotPasswordComponent,
-        RecoverPasswordComponent,
         LanguageComponent,
         MainMenuComponent,
         SubMenuComponent,

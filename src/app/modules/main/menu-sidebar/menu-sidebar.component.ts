@@ -3,7 +3,7 @@ import {UiState} from '@/store/ui/state';
 import {Component, HostBinding, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {AppService} from '@services/app.service';
-import {User} from 'firebase/auth';
+
 import {Observable} from 'rxjs';
 
 const BASE_CLASSES = 'main-sidebar elevation-4';
@@ -15,7 +15,7 @@ const BASE_CLASSES = 'main-sidebar elevation-4';
 export class MenuSidebarComponent implements OnInit {
     @HostBinding('class') classes: string = BASE_CLASSES;
     public ui: Observable<UiState>;
-    public user?: User;
+    public user?: any = {};
     public menu = MENU;
 
     constructor(
